@@ -1,4 +1,10 @@
 <div align="center">
+  <img src="./assets/banner.png" alt="Senior Azure DevOps & Cloud Architect - Subhasish Maiti" width="100%" />
+</div>
+
+<br/>
+
+<div align="center">
 
   <h1>👋 Hi, I'm Subhasish</h1>
   
@@ -55,6 +61,36 @@ I don’t just build CI/CD pipelines — **I architect scalable, secure, and sel
 |  6. Governed      7. High Avail    8. Cost-Optim    9. Backed Up      10. Compliant & Monitored  |
 +--------------------------------------------------------------------------------------------------+
 ```
+
+---
+
+## ⚡ The 8-Stage "Code to Cloud" Delivery Lifecycle
+
+> *"Code to cloud: automated, secured, and cost-aware."*
+
+A holistic, end-to-end delivery framework connecting developer workspaces to cloud-scale production environments with automated governance and FinOps guardrails:
+
+```mermaid
+flowchart LR
+    S1["1️⃣ Git<br/><b>Version Control</b><br/>Trunk-Based & Policies"] --> S2["2️⃣ CI/CD<br/><b>Build & Test</b><br/>Automated Pipelines"]
+    S2 --> S3["3️⃣ Docker<br/><b>Package</b><br/>Distroless Containers"]
+    S3 --> S4["4️⃣ Terraform<br/><b>Provision as Code</b><br/>Modular Landing Zones"]
+    S4 --> S5["5️⃣ Cloud Infra<br/><b>Azure Resources</b><br/>Hub-Spoke & Private Endpoints"]
+    S5 --> S6["6️⃣ Kubernetes<br/><b>Deploy & Scale</b><br/>AKS, Helm & GitOps"]
+    S6 --> S7["7️⃣ DevSecOps<br/><b>Scan & Secure</b><br/>Shift-Left Guardrails"]
+    S7 --> S8["8️⃣ Cost Optimization<br/><b>Right-Size & Save</b><br/>FinOps & Continuous Rightsizing"]
+```
+
+| # | Stage | Phase | Focus & Implementation Highlights | Core Tools & Technologies |
+| :-: | :--- | :--- | :--- | :--- |
+| **1** | **Git** | Version Control | Trunk-based development, mandatory PR reviews, branch protection, semantic release tagging. | `Git`, `GitHub`, `Azure Repos` |
+| **2** | **CI/CD** | Build & Test | Ephemeral self-hosted runners, unit/integration test suites, artifact signing, parallel test stages. | `Azure DevOps`, `GitHub Actions` |
+| **3** | **Docker** | Package | Multi-stage distroless builds, vulnerability-free base images, image provenance signing. | `Docker`, `ACR`, `OCI` |
+| **4** | **Terraform** | Provision as Code | Reusable modular IaC, remote state locking in blob storage, automated drift detection. | `Terraform`, `Bicep`, `Infracost` |
+| **5** | **Cloud Infra** | Azure Resources | Enterprise Hub-and-Spoke topology, Zero Public IPs, Private Endpoints, strict NSG segmentation. | `Azure Virtual Network`, `Private Link` |
+| **6** | **Kubernetes** | Deploy & Scale | Managed AKS clusters, Horizontal Pod Autoscaling (HPA), automated blue/green & canary rollouts. | `AKS`, `Kubernetes`, `Helm`, `ArgoCD` |
+| **7** | **DevSecOps** | Scan & Secure | Shift-left static analysis, secret detection, container scanning, automated compliance policies. | `Checkov`, `Trivy`, `GitLeaks`, `Defender` |
+| **8** | **Cost Optimization** | Right-Size & Save | FinOps unit economics, continuous workload rightsizing, Azure Reserved Instances & Savings Plans. | `Azure Cost Mgmt`, `FinOps Toolkit` |
 
 ---
 
